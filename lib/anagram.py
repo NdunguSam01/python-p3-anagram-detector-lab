@@ -7,7 +7,7 @@ class Anagram:
         # Convert the input word to lowercase and sort its characters
         sorted_word = sorted(self.word)
 
-        # Use a list comprehension to filter possible anagrams
+        # Using a list comprehension to filter possible anagrams
         matches = [anagram for anagram in possible_anagrams if self.is_anagram(anagram, sorted_word)]
 
         return matches
