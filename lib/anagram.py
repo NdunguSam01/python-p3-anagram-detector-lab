@@ -13,8 +13,7 @@ class Anagram:
         return matches
 
     def is_anagram(self, candidate, sorted_word):
-        # Check if the candidate word is not the same as the original word
-        # and if the sorted characters of both words match
+        # Check if the candidate word is not the same as the original word and if the sorted characters of both words match
         return candidate.lower() != self.word and sorted(candidate.lower()) == sorted_word
 
 word = 'listen'
